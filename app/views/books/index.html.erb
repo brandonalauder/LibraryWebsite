@@ -1,0 +1,22 @@
+<h1>Books</h1>
+<table>
+<tr>
+<th>Title</th>
+<th>Author</th>
+<th>Isbn</th>
+<th>Copies</th>
+<th></th>
+</tr>
+<%	@books.each do	|book|	%>
+<tr>
+<td><%=	book.title %></td>
+<td><%=	book.author %></td>
+<td><%=	book.isbn %></td>
+<td><%=	book.copies %></td>
+<td><%=	link_to 'Edit',	edit_book_path(book)	%></td>
+</tr>
+<%	end	%>
+</table>
+<p>
+  <%=	link_to 'Back',	admin_add_path %>
+</p>

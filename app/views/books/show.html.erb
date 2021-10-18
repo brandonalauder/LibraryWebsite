@@ -1,0 +1,27 @@
+<table>
+<tr>
+<th>Title</th>
+<th>Author</th>
+<th>Isbn</th>
+<th></th>
+</tr>
+<tr>
+<td><%=	@book.title %></td>
+<td><%=	@book.author %></td>
+<td><%=	@book.isbn %></td>
+</tr>
+</table>
+<h2>Reviews</h2>
+<%	@book.reviews.each do	|review|	%>
+<p>
+<strong>Reviewer:</strong>
+<%=	review.reviewer %>
+</p>
+<p>
+<strong>Review:</strong>
+<%=	review.body %>
+</p>
+<%	end	%>
+<p>
+  <%=	link_to 'Back',	patron_search_path %>
+</p>
