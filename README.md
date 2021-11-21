@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a rails application for a library database system. Users can create books, check them out, delete them, and search them. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run the app you need rails, node.js, yarn and SQLite3. 
+After installing those, on linux, go the project directory and run "yarn install" and then "rails server" 
+Project will be running and will be on localhost:3000 by default. 
